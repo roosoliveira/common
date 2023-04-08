@@ -1,5 +1,4 @@
 export type ID<T = any> = T extends infer E ? E : T
-export type Maybe<T = any> = T | undefined | null
 
 export type Period = {
     startDate: Date
@@ -15,6 +14,4 @@ export interface PaginatedData<T = any> extends Pagination {
     data: T[]
 }
 
-export interface Stringable {
-    toString(): string
-}
+export type MapCallback<T = any, R = any> = (value: T) => R

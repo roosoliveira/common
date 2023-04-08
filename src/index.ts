@@ -6,10 +6,11 @@ export {
     GetOne,
     Update,
     ID,
-    Maybe,
     PaginatedData,
     Pagination,
     Period,
     Stringable,
-    Validator
+    Validator,
+    Maybe
 } from './types'
+export { count, first, isEmpty, isNull, isUndefined, last } from './helpers'
