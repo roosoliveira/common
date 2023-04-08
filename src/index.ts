@@ -10,5 +10,6 @@ export {
     PaginatedData,
     Pagination,
     Period,
-    Stringable
+    Stringable,
+    Validator
 } from './types'

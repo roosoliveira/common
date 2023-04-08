@@ -7,3 +7,4 @@ export {
     Stringable,
     Maybe
 } from './types'
+export { Validator } from './validator'
