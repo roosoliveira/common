@@ -15,4 +15,4 @@ export {
     FilterParams
 } from './types'
 export { count, first, isEmpty, isNull, isUndefined, last } from './helpers'
-export { Exception, ListException } from './exceptions'
+export { Exception, ListException, NotFound } from './exceptions'
