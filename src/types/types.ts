@@ -15,3 +15,5 @@ export interface PaginatedData<T = any> extends Pagination {
 }
 
 export type MapCallback<T = any, R = any> = (value: T) => R
+
+export type Dictionary<T = any> = { [key: string | number]: T }
