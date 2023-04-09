@@ -1,6 +1,7 @@
-export { Create, Delete, GetAll, GetAllPaginated, GetOne, Update } from './crud'
+export { Create, Delete, GetAll, GetOne, Update } from './crud'
 export { ID, PaginatedData, Pagination, Period } from './types'
 export { Validator } from './validator'
 export { Maybe } from './maybe'
 export { Stringable } from './stringable'
 export { Entity } from './entity'
+export { Filter, FilterParams } from './filter'

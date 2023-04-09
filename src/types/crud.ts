@@ -1,28 +1,23 @@
-import { ID, PaginatedData, Pagination } from './types'
+import { Entity } from './entity'
+import { Filter } from './filter'
+import { ID } from './types'
 
-export interface GetOne<F = any, T = any> {
-    GetOne(filter: F): Promise<T>
+export interface GetOne<T extends Entity> {
+    GetOne(id: ID): Promise<T>
 }
 
-export interface GetAll<F = any, T = any> {
-    getAll(filter: F): Promise<T>
+export interface GetAll<F extends Filter, T extends Entity> {
+    getAll(filter: F): Promise<T[]>
 }
 
-export interface GetAllPaginated<F = any, T = any> {
-    getAllPaginated(
-        filter: F,
-        pagination: Pagination
-    ): Promise<PaginatedData<T>>
+export interface Create<IN, E extends Entity> {
+    create(data: IN): Promise<E>
 }
 
-export interface Create<IN = any, OUT = any> {
-    create(data: IN): Promise<OUT>
+export interface Update<T extends Entity> {
+    Update(data: T): Promise<T>
 }
 
-export interface Update<IN = any, OUT = any> {
-    Update(data: IN): Promise<OUT>
-}
-
-export interface Delete<I = ID> {
-    delete(data: I): Promise<void>
+export interface Delete {
+    delete(data: ID): Promise<void>
 }

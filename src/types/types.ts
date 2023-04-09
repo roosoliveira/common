@@ -1,4 +1,5 @@
 export type ID<T = any> = T extends infer E ? E : T
+export type Int = number
 
 export type Period = {
     startDate: Date
