@@ -1,5 +1,5 @@
 export { Create, Delete, GetAll, GetOne, Update } from './crud'
-export { ID, PaginatedData, Pagination, Period } from './types'
+export { ID, Period, Nullable } from './types'
 export { Validator } from './validator'
 export { Maybe } from './maybe'
 export { Stringable } from './stringable'
