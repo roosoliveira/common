@@ -1,4 +1,5 @@
-import { Exception } from '../exceptions'
+import { Exception, NotFound } from '../exceptions'
+import { Entity, GetOne, ID, Nullable } from '../types'
 import { count } from './array'
 
 export function not(value: boolean): boolean {
@@ -30,4 +31,15 @@ export function throwIf(
     if (isWrong) {
         throw new E(args)
     }
+}
+
+export async function tryGetOne<T extends Entity>(params: {
+    id: ID
+    subject: string
+    repository: GetOne<Nullable<T>>
+}): Promise<T> {
+    const { id, repository, subject } = params
+    const item = await repository.getOne(id)
+    throwIf(isEmpty(item), NotFound, subject)
+    return item
 }

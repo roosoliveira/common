@@ -3,7 +3,7 @@ import { Filter } from './filter'
 import { ID, Nullable } from './types'
 
 export interface GetOne<T extends Entity | Nullable<Entity>> {
-    GetOne(id: ID): Promise<T>
+    getOne(id: ID): Promise<T>
 }
 
 export interface GetAll<F extends Filter, T extends Entity> {
