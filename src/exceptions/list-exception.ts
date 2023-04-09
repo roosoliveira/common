@@ -17,4 +17,10 @@ export class ListException extends Exception {
     hasErrors(): boolean {
         return isNotEmpty(this.errors)
     }
+
+    throw(): void {
+        if (this.hasErrors()) {
+            throw this
+        }
+    }
 }
