@@ -1,3 +1,4 @@
+import { Exception } from '../exceptions'
 import { count } from './array'
 
 export function not(value: boolean): boolean {
@@ -19,4 +20,14 @@ export function isEmpty(value: any): boolean {
 
 export function isNotEmpty(value: any): boolean {
     return not(isEmpty(value))
+}
+
+export function throwIf(
+    isWrong: boolean,
+    E: new (args?: any) => Exception,
+    args?: any
+) {
+    if (isWrong) {
+        throw new E(args)
+    }
 }
