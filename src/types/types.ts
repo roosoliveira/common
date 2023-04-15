@@ -1,6 +1,14 @@
 export type ID<T = any> = T extends infer E ? E : T
 export type Int = number
-export type Nullable<T = any> = T | null
+export type Nullable<T = any> = T | null | undefined
+export type Dictionary<T = any> = { [key: string | number]: T }
+export type JSON<T = any> =
+    | Dictionary<T>
+    | T[]
+    | Nullable<T>
+    | string
+    | number
+    | boolean
 
 export type Period = {
     startDate: Date
@@ -8,5 +16,3 @@ export type Period = {
 }
 
 export type MapCallback<T = any, R = any> = (value: T) => R
-
-export type Dictionary<T = any> = { [key: string | number]: T }
