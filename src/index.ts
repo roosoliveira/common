@@ -12,7 +12,9 @@ export {
     Maybe,
     Entity,
     Filter,
-    FilterParams
+    FilterParams,
+    Jsonable,
+    JSON
 } from './types'
 export {
     count,
