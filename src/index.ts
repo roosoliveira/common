@@ -26,3 +26,4 @@ export {
     throwIf
 } from './helpers'
 export { Exception, ListException, NotFound } from './exceptions'
+export { Base, Data, Double, Float, Integer, Text } from './types/primitive'
