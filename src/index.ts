@@ -9,8 +9,6 @@ export {
     last,
     not,
     throwIf,
-    toNum,
-    toStr,
     tryGetOne
 } from './helpers'
 export {
@@ -31,4 +29,3 @@ export {
     Update,
     Validator
 } from './types'
-export { Base, Data, Double, Float, ID, Integer, Text } from './types/primitive'

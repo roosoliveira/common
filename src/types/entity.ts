@@ -1,4 +1,4 @@
-import { ID } from './primitive'
+import { ID } from './types'
 
 export interface EntityParams {
     id: ID

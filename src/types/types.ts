@@ -1,3 +1,4 @@
+export type ID = number | string
 export type Int = number
 export type Nullable<T = any> = T | null | undefined
 export type Dictionary<T = any> = { [key: string | number]: T }

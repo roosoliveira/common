@@ -1,6 +1,5 @@
 import { Exception, NotFound } from '../exceptions'
-import { Entity, GetOne, Nullable } from '../types'
-import { Float, ID } from '../types/primitive'
+import { Entity, GetOne, ID, Nullable } from '../types'
 import { count } from './array'
 
 export function not(value: boolean): boolean {
@@ -43,12 +42,4 @@ export async function tryGetOne<T extends Entity>(params: {
     const item = await repository.getOne(id)
     throwIf(isEmpty(item), NotFound, subject)
     return item
-}
-
-export function toStr(data: Text): string {
-    return data.toString()
-}
-
-export function toNum(data: Float): number {
-    return data.getValue()
 }

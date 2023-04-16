@@ -1,7 +1,6 @@
 import { Entity } from './entity'
 import { Filter } from './filter'
-import { ID } from './primitive'
-import { Nullable } from './types'
+import { ID, Nullable } from './types'
 
 export interface GetOne<T extends Entity | Nullable<Entity>> {
     getOne(id: ID): Promise<T>

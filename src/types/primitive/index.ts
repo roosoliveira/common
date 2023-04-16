@@ -1,7 +1,0 @@
-export { Base } from './base'
-export { Data } from './data'
-export { Double } from './double'
-export { Float } from './float'
-export { Integer } from './integer'
-export { Text } from './text'
-export { ID } from './id'

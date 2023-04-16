@@ -6,7 +6,5 @@ export {
     isUndefined,
     not,
     throwIf,
-    toNum,
-    toStr,
     tryGetOne
 } from './utils'
