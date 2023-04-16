@@ -7,7 +7,10 @@
     "files": [
         "/dist"
     ],
-    "scripts": {},
+    "scripts": {
+        "build": "npx tsc --build",
+        "preinstall": "npm run build"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/roosoliveira/common.git"
@@ -19,7 +22,7 @@
         "url": "https://github.com/roosoliveira/common/issues"
     },
     "homepage": "https://github.com/roosoliveira/common#readme",
-    "devDependencies": {
+    "dependencies": {
         "typescript": "^5.0.4"
     }
 }
