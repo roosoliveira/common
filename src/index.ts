@@ -4,7 +4,6 @@ export {
     GetAll,
     GetOne,
     Update,
-    ID,
     Nullable,
     Period,
     Stringable,
@@ -28,4 +27,4 @@ export {
     toStr
 } from './helpers'
 export { Exception, ListException, NotFound } from './exceptions'
-export { Base, Data, Double, Float, Integer, Text } from './types/primitive'
+export { Base, Data, Double, Float, Integer, Text, ID } from './types/primitive'

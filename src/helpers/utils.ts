@@ -1,6 +1,6 @@
 import { Exception, NotFound } from '../exceptions'
-import { Entity, GetOne, ID, Nullable } from '../types'
-import { Data, Float } from '../types/primitive'
+import { Entity, GetOne, Nullable } from '../types'
+import { Float, ID } from '../types/primitive'
 import { count } from './array'
 
 export function not(value: boolean): boolean {

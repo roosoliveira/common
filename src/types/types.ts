@@ -1,4 +1,3 @@
-export type ID<T = any> = T extends infer E ? E : T
 export type Int = number
 export type Nullable<T = any> = T | null | undefined
 export type Dictionary<T = any> = { [key: string | number]: T }
