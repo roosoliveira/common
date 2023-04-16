@@ -7,10 +7,7 @@
     "files": [
         "/dist"
     ],
-    "scripts": {
-        "build": "npx tsc --build",
-        "preinstall": "npm run build"
-    },
+    "scripts": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/roosoliveira/common.git"
