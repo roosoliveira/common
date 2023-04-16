@@ -8,7 +8,7 @@
         "/dist"
     ],
     "scripts": {
-        "build": "npx tsc ./tsconfig.json",
+        "build": "npx tsc --project ./tsconfig.json",
         "postinstall": "npm run build"
     },
     "repository": {
