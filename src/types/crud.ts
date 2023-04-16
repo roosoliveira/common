@@ -15,7 +15,7 @@ export interface Create<IN, E extends Entity> {
 }
 
 export interface Update<T extends Entity> {
-    Update(data: T): Promise<T>
+    update(data: T): Promise<T>
 }
 
 export interface Delete {
