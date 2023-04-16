@@ -45,7 +45,7 @@ export async function tryGetOne<T extends Entity>(params: {
     return item
 }
 
-export function toStr(data: Data): string {
+export function toStr(data: Text): string {
     return data.toString()
 }
 
