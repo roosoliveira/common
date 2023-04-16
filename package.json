@@ -8,8 +8,8 @@
         "/dist"
     ],
     "scripts": {
-        "build": "npx tsc --build",
-        "preinstall": "npm run build"
+        "build": "npx tsc",
+        "postinstall": "npm run build"
     },
     "repository": {
         "type": "git",
@@ -22,7 +22,7 @@
         "url": "https://github.com/roosoliveira/common/issues"
     },
     "homepage": "https://github.com/roosoliveira/common#readme",
-    "dependencies": {
+    "devDependencies": {
         "typescript": "^5.0.4"
     }
 }
