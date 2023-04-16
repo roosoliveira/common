@@ -11,6 +11,6 @@
         "strictNullChecks": false /* When type checking, take into account 'null' and 'undefined'. */,
         "skipLibCheck": true /* Skip type checking all .d.ts files. */
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "tsconfig.json"],
     "exclude": ["node_modules"]
 }
