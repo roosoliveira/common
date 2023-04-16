@@ -10,6 +10,7 @@ export {
     Validator,
     Maybe,
     Entity,
+    EntityParams,
     Filter,
     FilterParams,
     Jsonable,
@@ -24,7 +25,9 @@ export {
     last,
     throwIf,
     toNum,
-    toStr
+    toStr,
+    isNotEmpty,
+    not
 } from './helpers'
 export { Exception, ListException, NotFound } from './exceptions'
 export { Base, Data, Double, Float, Integer, Text, ID } from './types/primitive'
