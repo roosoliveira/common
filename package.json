@@ -2,10 +2,14 @@
     "name": "common",
     "version": "1.0.0",
     "description": "",
-    "main": "./src/index.ts",
-    "types": "./src/index.ts",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "npx tsc --build",
+        "preinstall": "npm run build"
     },
     "repository": {
         "type": "git",
