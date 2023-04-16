@@ -1,33 +1,34 @@
-export {
-    Create,
-    Delete,
-    GetAll,
-    GetOne,
-    Update,
-    Nullable,
-    Period,
-    Stringable,
-    Validator,
-    Maybe,
-    Entity,
-    EntityParams,
-    Filter,
-    FilterParams,
-    Jsonable,
-    JSON
-} from './types'
+export { Exception, ListException, NotFound } from './exceptions'
 export {
     count,
     first,
     isEmpty,
+    isNotEmpty,
     isNull,
     isUndefined,
     last,
+    not,
     throwIf,
     toNum,
     toStr,
-    isNotEmpty,
-    not
+    tryGetOne
 } from './helpers'
-export { Exception, ListException, NotFound } from './exceptions'
-export { Base, Data, Double, Float, Integer, Text, ID } from './types/primitive'
+export {
+    Create,
+    Delete,
+    Entity,
+    EntityParams,
+    Filter,
+    FilterParams,
+    GetAll,
+    GetOne,
+    JSON,
+    Jsonable,
+    Maybe,
+    Nullable,
+    Period,
+    Stringable,
+    Update,
+    Validator
+} from './types'
+export { Base, Data, Double, Float, ID, Integer, Text } from './types/primitive'

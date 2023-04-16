@@ -1,11 +1,12 @@
+export { count, first, last } from './array'
 export {
     isEmpty,
+    isNotEmpty,
     isNull,
     isUndefined,
-    isNotEmpty,
     not,
     throwIf,
     toNum,
-    toStr
+    toStr,
+    tryGetOne
 } from './utils'
-export { count, first, last } from './array'
